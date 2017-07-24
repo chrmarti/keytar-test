@@ -1,0 +1,21 @@
+{
+  "name": "keytar-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "build": "tsc -w -p .",
+    "start": "rm -r node_modules/keytar node_modules/nan; npm install && node out/test.js",
+    "debug": "node --debug-brk out/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "keytar": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/keytar": "^4.0.0",
+    "@types/node": "^8.0.15"
+  }
+}
